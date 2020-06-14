@@ -29,7 +29,7 @@ Atom 설치가 완료되었다면 실행 후 **단축키(Ctrl + ,)**를 통해 S
 
 [git에 대한 기본적인 지식이 있어야합니다. git에 대해 학습 하실려면 이 링크를 참조해보세요](https://rogerdudler.github.io/git-guide/index.ko.html)
 
-## 3. [Git-Clone]
+## 3. Git-Clone
 
 **git-clonde를 설치하는 이유?**
 
