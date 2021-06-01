@@ -7,6 +7,7 @@ categories:  git/github
 
 ## 1. Updates were rejected because the remote contains work that ~
 
+
 **첫번째 오류**
 
 [인종차별 이슈로 인한 Github의 기술용어 변경](https://atom.io/)에 따른 새로운 main branch에 push 하려고 하자 아래와 같은 오류가 발생했다.
@@ -18,6 +19,7 @@ categories:  git/github
 ![git-plus](https://rlftmdtp.github.io/static/img/posts/pushError01.PNG)
 
 ## 2. Updates were rejected because the tip of your current branch is behind ~  
+
 
 **두번째 오류**
 
