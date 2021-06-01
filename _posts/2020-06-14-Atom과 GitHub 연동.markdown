@@ -22,7 +22,7 @@ Atom은 GitHub에서 개발한 오픈소스 기반의 텍스트 에디터 입니
 
 **git-plus를 설치하는 이유?**
 
-git bash를 열고 매번 해당 프로젝트 폴더로 이동하여 입력하지 않고, ctrl + shift + h 단축키로 Atom 에디어텡서 바로 git 명령어를 사용하기 위함
+git bash를 열고 매번 해당 프로젝트 폴더로 이동하여 입력하지 않고, ctrl + shift + h 단축키로 Atom 에디터에서 바로 git 명령어를 사용하기 위함
 
 ![git-plus](https://rlftmdtp.github.io/static/img/posts/gitplusInstall.PNG)
 
