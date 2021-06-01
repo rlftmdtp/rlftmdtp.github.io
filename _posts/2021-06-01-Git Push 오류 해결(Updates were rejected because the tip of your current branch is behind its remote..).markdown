@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git Push 오류 해결(Updates were rejected because the tip of your current branch is behind its remote..)"
+title:  "Git Push 오류 해결(Updates were rejected because ~)"
 date:   2021-06-01 13:33:10 +0700
 categories:  git/github
 ---
