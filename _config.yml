@@ -23,7 +23,7 @@ social:
       link: "https://www.linkedin.com/in/summonagus"
     - icon: fa-github
       link: "https://github.com/rlftmdtp"
-      
+
 contact:
     - icon: fa-envelope-o
       link: "#"
@@ -40,7 +40,7 @@ urls:
     - text: About Me
       url: /about/
     - text: 알고리즘
-      url: /category/argorithm
+      url: https://github.com/rlftmdtp/Algorithm
     - text: My Projects
       url: /projects/
     - text: XML Feed
