@@ -36,4 +36,4 @@ if(url.startsWith("http://") < 0) {
 ```java
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 ```
-[위의 메타그는 현재 나의 페이지의 http 요청을 자동으로 https 요청으로 일괄적으로 변경하여 전송하라는 뜻이다.](https://web.dev/fixing-mixed-content/)
+[위의 메타태그는 현재 나의 페이지의 http 요청을 자동으로 https 요청으로 일괄적으로 변경하여 전송하라는 뜻이다.](https://web.dev/fixing-mixed-content/)
