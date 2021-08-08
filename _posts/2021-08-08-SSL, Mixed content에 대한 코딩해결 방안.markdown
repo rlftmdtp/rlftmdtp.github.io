@@ -7,11 +7,18 @@ categories:  develope
 
 ##  Mixed Contetn Error 발생 이유?
 
-https 홈페이지에서 http홈페이지로 전송될떄 프로토콜이 다르므로 CORS[1]에 포함됨 (다만 http->https는 가능)
+웹 브라우저들은 보안상의 이유로 javascript 나 ajax로 다른 도메인의 서버에 요청하는 것을 보안위반으로 간주하고 차단한다.(익스는 허용, 크롬은 차단)
+![git-plus](https://rlftmdtp.github.io/static/img/posts/Mixed Contetn Error.jpg)
+
+https 홈페이지에서 http홈페이지로 전송될떄 프로토콜이 다르므로 CORS에 포함됨 (다만 http->https는 가능)
+
+
  [Cross-Origin Resource Sharing(CORS) 정보](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 따라서 Mixed content : ~ This request has been blocked; the content must be served over HTTPS 에러로 감지
+
 [https를 사용하는 사용자가 http로 이동하는 것은 안전하지 않은 리소스 활성화는 다양한 공격과 보안에 대한 사용자의 기대를 위반하기 떄문](ttps://stackoverflow.com/questions/35178135/how-to-fix-insecure-content-was-loaded-over-https-but-requested-an-insecure-re)
+
 
 ##  해결방안
 https에서 http로 전송할 수 있는 근본적인 해결방은 없음 호출되는 서버를 SSL로 구성하거나 각 브라우저별 인터넷 옵션을 설정해야한다
