@@ -21,8 +21,9 @@ https 홈페이지에서 http홈페이지로 전송될떄 프로토콜이 다르
 
 
 ##  해결방안
-https에서 http로 전송할 수 있는 근본적인 해결방은 없음 호출되는 서버를 SSL로 구성하거나 각 브라우저별 인터넷 옵션을 설정해야한다
-서버에 SSL를 설정했다면 http로 접속할시 httpS로 변경하는 코드 추가
+https에서 http로 전송할 수 있는 근본적인 해결방은 없음 호출되는 서버를 SSL로 구성하거나 각 브라우저별 인터넷 옵션을 설정해야한다.
+
+서버에 SSL를 설정했다면 http로 접속할시 https로 변경하는 코드 추가
 ```java
 String url = request.getRequestURL().toString();
 if(url.startsWith("http://") < 0) {
@@ -32,8 +33,10 @@ if(url.startsWith("http://") < 0) {
 ```
 
 
-코드를 통해 https로 변경 되었지만 현재 프로젝트 내에서 http로 이동하는 페이지가 존재한다면 역시나 Mixed contetn~ 에러가 발생하므로
+코드를 통해 https로 변경 되었지만 현재 프로젝트 내에서 http로 이동하는 페이지가 존재한다면 역시나 Mixed contetn~ 에러가 발생하므로 아래의 메타태그를 추가한다.
+
+[이 메타태그는 현재 나의 페이지의 http 요청을 자동으로 https 요청으로 일괄적으로 변경하여 전송하라는 뜻이다.](https://web.dev/fixing-mixed-content/)
 ```java
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 ```
-[위의 메타태그는 현재 나의 페이지의 http 요청을 자동으로 https 요청으로 일괄적으로 변경하여 전송하라는 뜻이다.](https://web.dev/fixing-mixed-content/)
+
