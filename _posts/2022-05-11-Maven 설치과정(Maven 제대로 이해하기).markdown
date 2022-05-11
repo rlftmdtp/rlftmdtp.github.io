@@ -9,8 +9,7 @@ categories:  develope
 
 그랬던 내가 빌드 배포를 위해 Maven을 제대로 사용하고 공부했던 내용을 정리하고자 한다.
 
-## 1. Maven이란?
-
+## [1. Maven이란?]()
 Apache Ant, Maven, Gradle 과 같은 것들을 **빌드도구**라고 한다.
 Build 는 작성된 Source Code을 실제 기기 ( 컴퓨터, 핸드폰 ) 등에서 실행 될 수 있는 소프트웨어로 변한화기 위한 과정을 하는 것을 말하며, Build Tool 은 이러한 과정을 해주는 것이다.
 
@@ -35,19 +34,18 @@ Ant apache, Maven, Gradle은 단순 빌드뿐만 아니라 문서화, 의존관�
 * 2. Package : 배포 가능한 파일 생성 : war,jar,exe 등
 * 3. Test : 단위 테스트 수행, 빌드 결과 정상적인지 점검
 * 4. Report : Build, Package, Test 결과 정리 및 문서화(Report 생성)
-* 5. Release : Build 후 생성된 결과물(Artifact)를 **특정 저장소**에 배포
+* 5. Release : Build 후 생성된 결과물(Artifact)를 `특정 저장소`에 배포
 
 **이 특정 저장소라는 것이 로컬이든 원격저장소이든 내가원하는 곳에 할 수 있는데 Maven의 중앙저장소에 모여있는 라이브러리들을
 우리들은 편하게 pom.xml dependency 설정을 통해 간편하게 사용하는 것이다.**
 
 
-## 2. Maven 설치
+## [2. Maven 설치]()
 (Maven은 Java 도구이므로 이전에 당연히 Java가 설치 되어 있어야 한다.)
 
 [Maven 설치링크](https://maven.apache.org/download.cgi)에 가서 설치를 한다.
 
 그 후 Java 설치 떄와 마찬가지로 모든 경로에서 명령어를 사용할 수 있도록 PATH를 설정한다.
-
 제어판 > 시스템 > 고급 시스템 설정  > 고급 > 환경변수 > 시스템 변수 Path 항목에 Maven bin 위치 추가
 
 ![환경변수](https://rlftmdtp.github.io/static/img/posts/20220511/envSetting.png)
@@ -57,13 +55,13 @@ Ant apache, Maven, Gradle은 단순 빌드뿐만 아니라 문서화, 의존관�
 ![mvc-version](https://rlftmdtp.github.io/static/img/posts/20220511/mvc-version.PNG)
 
 
-## 3. 프로젝트 생성하기
+## [3. 프로젝트 생성하기]()
 
 ```java
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
-![mvc-version](https://rlftmdtp.github.io/static/img/posts/20220511/mvcImport.PNG)
+![mvc-version](https://rlftmdtp.github.io/static/img/posts/20220511/mvnImport.PNG)
 
 위와같이 명령어를 실행하면 이미지와 같이 각종 라이브러리를 임포트하고 실행 디렉터리에 my-app이라는 폴더가 생성된다.
 이 프로젝트를 통해 열심히 코딩을 한다.
@@ -71,4 +69,5 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 이후 Maven을 사용하면서 겪고 해결했던 글을 이어쓰고자 한다.
 
 [Maven을 하면 겪은 것 1]()
+
 [Maven을 하면 겪은 것 2]()
