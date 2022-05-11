@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Maven에 대해서 제대로 아시나요?(Maven 설치하기)"
+title:  "Maven 설치과정(Maven 제대로 이해하기)"
 date:   2022-05-11 13:33:10 +0700
 categories:  develope
 ---
@@ -49,10 +49,12 @@ Ant apache, Maven, Gradle은 단순 빌드뿐만 아니라 문서화, 의존관�
 그 후 Java 설치 떄와 마찬가지로 모든 경로에서 명령어를 사용할 수 있도록 PATH를 설정한다.
 
 제어판 > 시스템 > 고급 시스템 설정  > 고급 > 환경변수 > 시스템 변수 Path 항목에 Maven bin 위치 추가
+
+![환경변수](https://rlftmdtp.github.io/static/img/posts/20220511/envSetting.png)
+
 잘 설정 되었다면 cmd 창에서 mvn -version을 치면 아래와 같이 나온다
 
-이미지추가
-![git-plus](https://rlftmdtp.github.io/static/img/posts/gitplusInstall.PNG)
+![mvc-version](https://rlftmdtp.github.io/static/img/posts/20220511/mvc-version.PNG)
 
 
 ## 3. 프로젝트 생성하기
@@ -61,8 +63,12 @@ Ant apache, Maven, Gradle은 단순 빌드뿐만 아니라 문서화, 의존관�
 mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 ```
 
-위와같이 명령어를 실행하면 실행 디렉터리에 my-app이라는 폴더가 생성된다.
+![mvc-version](https://rlftmdtp.github.io/static/img/posts/20220511/mvcImport.PNG)
 
-이 프로젝트를 통해 Java를 열심히 코딩을 한다.
+위와같이 명령어를 실행하면 이미지와 같이 각종 라이브러리를 임포트하고 실행 디렉터리에 my-app이라는 폴더가 생성된다.
+이 프로젝트를 통해 열심히 코딩을 한다.
 
 이후 Maven을 사용하면서 겪고 해결했던 글을 이어쓰고자 한다.
+
+[Maven을 하면 겪은 것 1]()
+[Maven을 하면 겪은 것 2]()
