@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Maven package 해보기(manifest(maven-jar-plugin), 의존라이브러리(maven-dependency-plugin) 설정)"
+title:  "try-catch, throws 언제 어떻게 사용해야 할까?"
 date:   2022-05-12 15:15:15 +0700
 categories:  [develope, java]
 ---
